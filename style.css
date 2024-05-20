@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800;900&display=swap');
+html, body {
+    padding:0;
+    margin: 0;
+    height: 100%;
+    font-family: "Space Grotesk";
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+	font-family: Minecraft;
+	src:
+		url('https://raw.githubusercontent.com/galaxydevnetwork/cdn/main/fonts/minecraft/minecraftregular-bmg3-webfont.woff2') format('woff2'),
+		url('https://raw.githubusercontent.com/galaxydevnetwork/cdn/main/fonts/minecraft/minecraftregular-bmg3-webfont.woff') format('woff');
+}
+:root {
+    --text: #5E65C4;
+    --gray: #484955;
+    --white: #FFFFFF;
+}
+/* Home */
+#home {
+    background-image: url("home.png");
+    padding-bottom: 25em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text);
+}
+#home > .title {
+    font-weight: 900;
+    margin-top: 0;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+.scroll-text {
+    color: var(--gray);
+    white-space: nowrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    animation: scroll-left 10s infinite linear;
+    font: 1.3rem Minecraft;
+    font-weight: 800;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.scroll-container {
+    background-color: white;
+    overflow: hidden;
+}
+.discord {
+    width: 100%;
+    height: 32px;
+}
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+  }
+
+/* Community */
+.minecraft {
+    font-family: Minecraft, "Space Grotesk", sans-serif;
+}
+.center {
+    width: 100%;
+    text-align: center;
+}
+.thebest {
+    margin-bottom: -1em;
+}
+.community-title {
+    font-weight: 900;
+    font-size: 48px;
+}
+#community > .bg-img {
+    margin-top: 0;
+    padding-bottom: 50em;
+    background-image: url("space.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gray {
+    color: var(--gray)
+}
+#community {
+    color: rgb(88, 88, 255);
+}
+/* wiki */
+#wiki {
+    background-color: #E0E2ED;
+}
+#wiki {
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+    display: flex;
+    flex-direction: row;
+}
+#wiki > .img {
+    flex: 1;
+    padding-right: 5em;
+}
+#wiki > .img > img {
+    margin: 5em;
+}
+#wiki .wiki-img {
+    border-radius: 50px;
+}
+#wiki > .text {
+    margin-top: 5em;
+}
+#wiki > .text > .description {
+    font-weight: 800;
+    margin-top: -0.1em;
+    font-size: 45px;
+    width: 50%;
+    margin-bottom: 2em;
+}
+#wiki > .text > .button {
+    text-decoration: none;
+    background-color: #484955;
+    color: white;
+    padding: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 50px;
+}
+#wiki > .text > .button:hover {
+    background-color: #2c2c34;
+}
+
+@media only screen and (max-width: 950px) {
+    #wiki > .img > img {
+        margin: 0;
+    }
+    #wiki > .img {
+        width: 100%;
+        text-align: center;
+    }
+    #wiki > .img { 
+        padding-right: 0;
+    }
+    #wiki {
+        display: block;
+        flex-direction: row;
+    }
+    #wiki > .text {
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+    #wiki > .text > .description {
+        margin-top: -0.1em;
+        font-size: 45px;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
